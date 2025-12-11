@@ -1,12 +1,12 @@
-# TP_DevSecOps
+# TP_CTF
 
 ## Overview
 
-TP_DevSecOps is a comprehensive project designed to enhance your skills and knowledge in the fields of Development, Security, and Operations. This project provides a set of Capture The Flag (CTF) challenges that will help you to learn and apply various DevSecOps techniques and tools.
+TP_CTF is a comprehensive project designed to enhance your skills and knowledge in the fields of Development, Security, and Operations. This project provides a set of Capture The Flag (CTF) challenges that will help you to learn and apply various DevSecOps techniques and tools.
 
 ## CTF Challenges
 
-The CTF challenges are the core of the TP_DevSecOps project. They are designed to test your skills in various areas of DevSecOps, including but not limited to:
+The CTF challenges are the core of the TP_CTF project. They are designed to test your skills in various areas of DevSecOps, including but not limited to:
 
 - Secure coding practices
 - Vulnerability assessment
@@ -18,10 +18,10 @@ Each challenge comes with a set of tasks that you need to complete in order to "
 
 ## Getting Started
 
-To get started with the TP_DevSecOps project, you need to clone this repository to your local machine. You can do this using the following command:
+To get started with the TP_CTF project, you need to clone this repository to your local machine. You can do this using the following command:
 
 ```
-git clone https://github.com/NoIdea-Co/TP_DevSecOps.git
+git clone https://github.com/NoIdea-Co/TP_CTF.git
 ```
 
 Once you have cloned the repository, navigate to the project directory and open the `README.md` file for each challenge to get detailed instructions on how to complete it.
@@ -37,7 +37,7 @@ Before you start working on the challenges, make sure that you have the followin
 
 ## Contributing
 
-We welcome contributions to the TP_DevSecOps project. If you have an idea for a new challenge or an improvement to an existing one, please open an issue or submit a pull request.
+We welcome contributions to the TP_CTF project. If you have an idea for a new challenge or an improvement to an existing one, please open an issue or submit a pull request.
 
 ## License
 

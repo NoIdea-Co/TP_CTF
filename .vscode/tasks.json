@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Docker Compose Up (rebuild)",
+			"type": "shell",
+			"command": "& 'C:\\Program Files\\Docker\\Docker\\resources\\bin\\docker.EXE' compose -f 'ctf\\docker-compose.yml' up -d --build",
+			"group": "build"
+		}
+	]
+}
