@@ -2,22 +2,31 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Challenge Virology – Config Analysis</title>
+  <title>CTF — Virology · Config Analysis</title>
+  <link rel="icon" type="image/png" href="/img/icon.png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="app.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Virologie (analyse pédagogique)</h1>
-    <p>Analysez les faux logs et la config chiffrée pour extraire une URL C2 qui sert de flag.</p>
-    <h2>Fichiers</h2>
-    <ul>
-      <li><a href="/files/beacon.log">beacon.log</a></li>
-      <li><a href="/files/config.bin">config.bin</a></li>
-      <li><a href="/files/pseudo.txt">pseudo.txt</a></li>
-    </ul>
-    <p>Indice léger: XOR simple et base64 suffisent.</p>
-    <script src="app.js"></script>
-  </div>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">CTF — Virology · Config Analysis</div>
+    </div>
+  </header>
+  <main class="container centered">
+    <section class="card">
+      <h1 class="title">Analyse pédagogique — Config & Logs</h1>
+      <p class="subtitle">Analysez les faux logs et la config chiffrée pour extraire une URL C2 (flag).</p>
+      <div class="form">
+        <div class="form-row actions">
+          <a class="btn btn-primary" href="/files/beacon.log">beacon.log</a>
+          <a class="btn btn-secondary" href="/files/config.bin">config.bin</a>
+          <a class="btn btn-secondary" href="/files/pseudo.txt">pseudo.txt</a>
+        </div>
+        <p class="hint">Indice : base64 puis XOR <code>0x42</code> suffisent.</p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>

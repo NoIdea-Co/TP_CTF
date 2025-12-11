@@ -23,6 +23,10 @@ def app_js():
 def download_binary():
     return send_from_directory('.', 'rev_check')
 
+@app.route('/img/<path:name>')
+def serve_img(name):
+    return send_from_directory('img', name)
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', '5007'))
     app.run(host='0.0.0.0', port=port)

@@ -2,18 +2,33 @@
 <html>
 <head>
   <meta charset="utf-8" />
-  <title>Challenge Vuln App – Pwn</title>
+  <title>CTF — Vuln App · Format String</title>
+  <link rel="icon" type="image/png" href="/img/icon.png" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="app.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Pwn – Format String</h1>
-    <p>Connectez-vous au service TCP pour exploiter une vulnérabilité de type format string et révéler le flag.</p>
-    <h2>Accès réseau</h2>
-    <p>Utilisez netcat: <code>nc &lt;host&gt; 6009</code></p>
-    <p>Indice léger: l'application effectue <code>printf(user_input)</code> directement.</p>
-    <script src="app.js"></script>
-  </div>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">CTF — Vuln App · Format String</div>
+    </div>
+  </header>
+  <main class="container centered">
+    <section class="card">
+      <h1 class="title">Exploitation — Format String</h1>
+      <p class="subtitle">Connectez-vous au service TCP pour exploiter une vulnérabilité de type format string.</p>
+      <div class="form">
+        <div class="form-row">
+          <p class="hint">Accès réseau : <code>nc &lt;host&gt; 6009</code></p>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="#">Ouvrir netcat</a>
+          <a class="btn btn-secondary" href="/">Réinitialiser</a>
+        </div>
+        <p class="hint">Indice : l'application effectue <code>printf(user_input)</code> directement.</p>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
 </body>
 </html>

@@ -25,6 +25,10 @@ def style_css():
 def app_js():
     return send_from_directory('.', 'app.js')
 
+@app.route('/img/<path:name>')
+def serve_img(name):
+    return send_from_directory('img', name)
+
 # Vulnerability: IDOR on /profile?id=... without auth checks
 @app.route('/profile')
 def profile():
