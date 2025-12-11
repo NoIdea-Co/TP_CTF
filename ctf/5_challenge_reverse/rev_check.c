@@ -8,7 +8,7 @@ int main(){
     // strip newline
     input[strcspn(input, "\n")] = 0;
     if(strcmp(input, "reverserocks") == 0){
-        printf("ctf[reverse_basic_check]\n");
+        printf("CTF{reverse_basic_check}\n");
     } else {
         printf("Wrong!\n");
     }

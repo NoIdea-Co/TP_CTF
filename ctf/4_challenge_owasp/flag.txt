@@ -1,1 +1,1 @@
-ctf[owasp_idor_easy]
+CTF{owasp_idor_easy}

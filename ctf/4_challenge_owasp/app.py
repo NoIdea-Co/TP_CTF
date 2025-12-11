@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, send_from_directory
 import os
 
 app = Flask(__name__)
-app.config['SECRET_FLAG'] = 'ctf[owasp_idor_easy]'
+app.config['SECRET_FLAG'] = 'CTF{owasp_idor_easy}'
 
 USERS = {
     1: {"id": 1, "username": "alice", "token": "alice-123"},

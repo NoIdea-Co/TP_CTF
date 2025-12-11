@@ -6,7 +6,7 @@ Télécharger le binaire `rev_check`, trouver la chaîne attendue pour afficher 
 ## Étapes
 - Inspecter les chaînes: `strings rev_check | Select-String reverserocks`
 - Ou désassembler; comparaison `strcmp(input, "reverserocks")`
-- Exécuter: `echo reverserocks | ./rev_check` → `ctf[reverse_basic_check]`
+- Exécuter: `echo reverserocks | ./rev_check` → `CTF{reverse_basic_check}`
 
 ## Flag
-`ctf[reverse_basic_check]`
+`CTF{reverse_basic_check}`

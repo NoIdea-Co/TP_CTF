@@ -1,1 +1,1 @@
-ctf[malware_config_decoded]
+CTF{malware_config_decoded}

@@ -1,1 +1,1 @@
-ctf[pwn_easy_format_string]
+CTF{pwn_easy_format_string}

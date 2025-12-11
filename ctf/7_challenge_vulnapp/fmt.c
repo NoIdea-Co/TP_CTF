@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-char FLAG[] = "ctf[pwn_easy_format_string]";
+char FLAG[] = "CTF{pwn_easy_format_string}";
 
 int main(){
     setvbuf(stdout, NULL, _IONBF, 0);

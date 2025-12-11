@@ -6,7 +6,7 @@ API de profils expose `/profile?id=...` sans contrôle d'accès. Récupérer le 
 ## Étapes
 - Appeler `GET /profile?id=1` (alice) et `GET /profile?id=2` (bob)
 - Le token de Bob est renvoyé: `bob-456`
-- Appeler `GET /flag?token=bob-456` → `ctf[owasp_idor_easy]`
+- Appeler `GET /flag?token=bob-456` → `CTF{owasp_idor_easy}`
 
 ## Flag
-`ctf[owasp_idor_easy]`
+`CTF{owasp_idor_easy}`

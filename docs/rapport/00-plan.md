@@ -3,7 +3,7 @@
 
 ## Rôles
 - Lead DevSec : @Cronix2
-- Lead SecOps/Formation : @Madajel
+- Lead SecOps/Formation : @Cronix2
 
 
 ## Rituels

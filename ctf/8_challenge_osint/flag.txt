@@ -1,1 +1,1 @@
-ctf[osint_placeholder]
+CTF{osint_placeholder}
