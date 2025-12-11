@@ -1,5 +1,5 @@
 services:
-  ctfd:
+  0-ctfd:
     image: ctfd/ctfd:latest
     restart: unless-stopped
     ports:
@@ -8,7 +8,7 @@ services:
       - DATABASE_URL=sqlite:////data/ctfd.db
     volumes:
       - ../ctfd/ctfd-data:/data
-  sqli:
+  1-challenge_sqli:
     build: ./challenge-sqli
     ports:
       - "5000:5000"
@@ -16,7 +16,7 @@ services:
       - ./challenge-sqli/flag.txt:/app/flag.txt:ro
       - ../img:/app/img:ro
 
-  upload:
+  2-challenge_upload:
     build: ./challenge-upload
     ports:
       - "5001:5001"
@@ -24,10 +24,45 @@ services:
       - ./challenge-upload/flag.txt:/app/flag.txt:ro
       - ../img:/app/img:ro
 
-  cmd:
+  3-challenge_cmd:
     build: ./challenge-cmd
     ports:
       - "5002:5002"
     volumes:
       - ./challenge-cmd/flag.txt:/app/flag.txt:ro
       - ../img:/app/img:ro
+
+  4-challenge_owasp:
+    build: ./challenge_owasp
+    ports:
+      - "5006:5006"
+    volumes:
+      - ./challenge_owasp/flag.txt:/app/flag.txt:ro
+
+  5-challenge_reverse:
+    build: ./challenge_reverse
+    ports:
+      - "5007:5007"
+    volumes:
+      - ./challenge_reverse/flag.txt:/app/flag.txt:ro
+
+  6-challenge_virology:
+    build: ./challenge_virology
+    ports:
+      - "5008:5008"
+    volumes:
+      - ./challenge_virology/flag.txt:/app/flag.txt:ro
+
+  7-challenge_vulnapp:
+    build: ./challenge_vulnapp
+    ports:
+      - "5009:5009"
+      - "6009:6009"
+    volumes:
+      - ./challenge_vulnapp/flag.txt:/app/flag.txt:ro
+  8-challenge_osint:
+    build: ./challenge_osint
+    ports:
+      - "5010:5010"
+    volumes:
+      - ./challenge_osint/flag.txt:/app/flag.txt:ro

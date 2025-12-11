@@ -1,0 +1,1 @@
+Pseudo-code\n\nkey = 0x42\ndata = read_bytes('config.bin')\ndecoded = base64_decode(data)\nfor each byte in decoded: output byte ^ key\n

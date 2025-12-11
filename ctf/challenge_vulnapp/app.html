@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Challenge Vuln App – Pwn</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Pwn – Format String</h1>
+    <p>Connectez-vous au service TCP pour exploiter une vulnérabilité de type format string et révéler le flag.</p>
+    <h2>Accès réseau</h2>
+    <p>Utilisez netcat: <code>nc &lt;host&gt; 6009</code></p>
+    <p>Indice léger: l'application effectue <code>printf(user_input)</code> directement.</p>
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>

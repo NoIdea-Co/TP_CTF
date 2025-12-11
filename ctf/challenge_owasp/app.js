@@ -1,0 +1,1 @@
+console.log('OWASP IDOR challenge loaded');

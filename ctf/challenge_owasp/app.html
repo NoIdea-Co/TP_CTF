@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Challenge OWASP – IDOR</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>OWASP Top 10 – IDOR</h1>
+    <p>Une petite appli expose des profils via une API <code>/profile?id=...</code> sans contrôle d'accès.
+       Trouvez comment accéder à un autre utilisateur et récupérer son token pour obtenir le flag.</p>
+    <h2>Interaction</h2>
+    <ul>
+      <li>Base URL: <code>/</code> (cette page)</li>
+      <li>API: <code>/profile?id=&lt;user_id&gt;</code></li>
+      <li>Flag: <code>/flag?token=&lt;token&gt;</code></li>
+    </ul>
+    <p>Indices légers: Observez les IDs utilisateurs et testez des valeurs différentes...</p>
+    <script src="app.js"></script>
+  </div>
+</body>
+</html>

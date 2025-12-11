@@ -1,0 +1,1 @@
+console.log('Vulnapp challenge loaded');

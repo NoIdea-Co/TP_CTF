@@ -1,0 +1,1 @@
+ctf[owasp_idor_easy]
