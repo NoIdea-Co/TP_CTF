@@ -1,0 +1,34 @@
+version: '3.7'
+services:
+  ctfd:
+    image: ctfd/ctfd:latest
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:////data/ctfd.db
+    volumes:
+      - ../ctfd/ctfd-data:/data
+  sqli:
+    build: ./challenge-sqli
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./challenge-sqli/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
+
+  upload:
+    build: ./challenge-upload
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./challenge-upload/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
+
+  cmd:
+    build: ./challenge-cmd
+    ports:
+      - "5002:5002"
+    volumes:
+      - ./challenge-cmd/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Feuille de style centralisée (thème sombre) -->
+    <link rel="icon" href="/favicon.ico?v=1" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png?v=1" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=1" />
+        <link rel="stylesheet" href="style.css" />
+        <title>CTF — Injection SQL</title>
+        <script defer src="app.js"></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="container">
+                <div class="brand">CTF — Sécurité Web</div>
+            </div>
+        </header>
+
+        <main class="centered">
+            <div class="container">
+                <section class="card">
+                    <h1 class="title">Injection SQL — Connexion</h1>
+                    <p class="subtitle">Formulaire basique pour s’authentifier.</p>
+                    <form class="form" method="GET" action="/login">
+                        <div class="form-row">
+                            <label for="username">Nom d’utilisateur</label>
+                            <input id="username" name="username" placeholder="username" />
+                        </div>
+                        <div class="form-row">
+                            <label for="password">Mot de passe</label>
+                            <input id="password" name="password" type="text" placeholder="password" />
+                        </div>
+                        <div class="actions">
+                            <button class="btn btn-primary" type="submit">Se connecter</button>
+                            <a class="btn btn-secondary" href="/">Réinitialiser</a>
+                        </div>
+                    </form>
+
+                    <p class="hint">Indice : pensez aux injections SQL pour mener votre enquête.</p>
+                </section>
+            </div>
+        </main>
+    </body>
+    </html>
