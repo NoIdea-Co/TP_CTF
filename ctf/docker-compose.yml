@@ -9,60 +9,65 @@ services:
     volumes:
       - ../ctfd/ctfd-data:/data
   1-challenge_sqli:
-    build: ./challenge-sqli
+    build: ./1_challenge_sqli
     ports:
       - "5000:5000"
     volumes:
-      - ./challenge-sqli/flag.txt:/app/flag.txt:ro
+      - ./1_challenge_sqli/flag.txt:/app/flag.txt:ro
       - ../img:/app/img:ro
 
   2-challenge_upload:
-    build: ./challenge-upload
+    build: ./2_challenge_upload
     ports:
       - "5001:5001"
     volumes:
-      - ./challenge-upload/flag.txt:/app/flag.txt:ro
+      - ./2_challenge_upload/flag.txt:/app/flag.txt:ro
       - ../img:/app/img:ro
 
   3-challenge_cmd:
-    build: ./challenge-cmd
+    build: ./3_challenge_cmd
     ports:
       - "5002:5002"
     volumes:
-      - ./challenge-cmd/flag.txt:/app/flag.txt:ro
+      - ./3_challenge_cmd/flag.txt:/app/flag.txt:ro
       - ../img:/app/img:ro
 
   4-challenge_owasp:
-    build: ./challenge_owasp
+    build: ./4_challenge_owasp
     ports:
       - "5006:5006"
     volumes:
-      - ./challenge_owasp/flag.txt:/app/flag.txt:ro
+      - ./4_challenge_owasp/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
 
   5-challenge_reverse:
-    build: ./challenge_reverse
+    build: ./5_challenge_reverse
     ports:
       - "5007:5007"
     volumes:
-      - ./challenge_reverse/flag.txt:/app/flag.txt:ro
+      - ./5_challenge_reverse/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
 
   6-challenge_virology:
-    build: ./challenge_virology
+    build: ./6_challenge_virology
     ports:
       - "5008:5008"
     volumes:
-      - ./challenge_virology/flag.txt:/app/flag.txt:ro
+      - ./6_challenge_virology/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
 
   7-challenge_vulnapp:
-    build: ./challenge_vulnapp
+    build: ./7_challenge_vulnapp
     ports:
       - "5009:5009"
       - "6009:6009"
     volumes:
-      - ./challenge_vulnapp/flag.txt:/app/flag.txt:ro
+      - ./7_challenge_vulnapp/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
   8-challenge_osint:
-    build: ./challenge_osint
+    build: ./8_challenge_osint
     ports:
       - "5010:5010"
     volumes:
-      - ./challenge_osint/flag.txt:/app/flag.txt:ro
+      - ./8_challenge_osint/flag.txt:/app/flag.txt:ro
+      - ../img:/app/img:ro
